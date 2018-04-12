@@ -1,0 +1,13 @@
+[Unit]
+Description=BorgBackup
+Requires=network-online.target
+
+[Service]
+Type=oneshot
+ExecStart=/root/backup
+#Restart=on-failure
+RestartSec=20
+
+[Install]
+WantedBy=timers.target
+

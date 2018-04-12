@@ -1,0 +1,11 @@
+[Unit]
+Description=auto adjust macbook brightness
+
+[Service]
+ExecStart=/usr/local/bin/lighter.pl
+Restart=on-failure
+RestartSec=7
+
+[Install]
+WantedBy=multi-user.target
+
